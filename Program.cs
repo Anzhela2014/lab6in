@@ -86,44 +86,44 @@
 // //     }
 // // }
 // // Итоговая задача. «Угадай число»
-// int sec = 42;
-// bool w = false;
-// Console.WriteLine("Я загадал число. У тебя 5 попыток угадать его!");
-// for (int i = 1; i <= 5; i++)
-// {
-//     Console.Write("Попытка №" + i + ". Введи число: ");
-//     int u = int.Parse(Console.ReadLine());
-//     if (u == sec)
-//     {
-//         Console.WriteLine("Победа! Попыток: " + i);
-//         w = true;
-//         break;
-//     }
-//     if (u > sec)
-//     {
-//         Console.WriteLine("Меньше");
-//     }
-//     if (u < sec)
-//     {
-//         Console.WriteLine("Больше");
-//     }
-// }
-// if (w == false)
-// {
-//     Console.WriteLine("Ты проиграл, число было 42");
-// }
-// Доп задание
-Console.Write("Введите целое число: ");
-int n = int.Parse(Console.ReadLine());
-int s = 0;
-int c = 0;
-do
+int sec = 42;
+bool w = false;
+Console.WriteLine("Я загадал число. У тебя 5 попыток угадать его!");
+for (int i = 1; i <= 5; i++)
 {
-    int o = n % 10;
-    s = s + o;
-    c = c + 1;
-    n = n / 10;
-} 
-while (n > 0);
-Console.WriteLine("Сумма цифр: " + s);
-Console.WriteLine("Количество цифр: " + c);
+    Console.Write("Попытка №" + i + ". Введи число: ");
+    int u = int.Parse(Console.ReadLine());
+    if (u == sec)
+    {
+        Console.WriteLine("Победа! Попыток: " + i);
+        w = true;
+        break;
+    }
+    if (u > sec)
+    {
+        Console.WriteLine("Меньше");
+    }
+    if (u < sec)
+    {
+        Console.WriteLine("Больше");
+    }
+}
+if (w == false)
+{
+    Console.WriteLine("Ты проиграл, число было 42");
+}
+// // Доп задание
+// Console.Write("Введите целое число: ");
+// int n = int.Parse(Console.ReadLine());
+// int s = 0;
+// int c = 0;
+// do
+// {
+//     int o = n % 10;
+//     s = s + o;
+//     c = c + 1;
+//     n = n / 10;
+// } 
+// while (n > 0);
+// Console.WriteLine("Сумма цифр: " + s);
+// Console.WriteLine("Количество цифр: " + c);
